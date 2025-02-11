@@ -6,6 +6,10 @@ inbox_table = Inbox
 inbox_settings = Einstellungen
 inbox_docs = Hilfe
 
+inbox.config.title = Einstellungen
+inbox.config.email = E-Mail-Adresse
+inbox.config.email.notics = Hier wird die E-Mail-Adresse eingetragen, an die die Nachrichten gesendet werden sollen.
+
 # YForm Tabellen-Übersetzung
 
 inbox.table = 📬 Posteingang
