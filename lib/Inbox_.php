@@ -2,9 +2,10 @@
 
 namespace Alexplusde\Inbox;
 
+use rex_yform;
 use rex_yform_manager_dataset;
 
-class inbox extends rex_yform_manager_dataset
+class Inbox extends rex_yform_manager_dataset
 {
     
     /* Name */
@@ -138,6 +139,33 @@ class inbox extends rex_yform_manager_dataset
     {
         $this->setValue("ip", $value);
         return $this;
+    }
+
+    public static function getYForm()
+    {
+        $yform = new rex_yform();
+        $yform->setObjectparams('form_name', 'table-rex_inbox');
+        $yform->setObjectparams('form_action', rex_getUrl('REX_ARTICLE_ID'));
+        $yform->setObjectparams('form_ytemplate', 'bootstrap');
+        $yform->setObjectparams('form_showformafterupdate', 0);
+        $yform->setObjectparams('real_field_names', true);
+
+        $yform->setValueField('text', ['name','translate:inbox.name','','0']);
+        $yform->setValidateField('empty', ['name','translate:inbox.name.validate.empty']);
+        $yform->setValueField('text', ['email','translate:inbox.email','','0','{"type":"email","required":"required"}']);
+        $yform->setValidateField('empty', ['email','translate:inbox.email.validate.empty']);
+        $yform->setValueField('text', ['phone','translate:inbox.phone','','0','{"type":"phone","required":"required"}']);
+        $yform->setValueField('textarea', ['message','translate:inbox.message','','0','{"required":"required"}']);
+        $yform->setValueField('privacy_policy', ['privacy_policy','translate:inbox.privacy_policy','0','{"required":"required"}','',',✅']);
+        $yform->setValueField('choice', ['preffered_channel','translate:inbox.preffered_channel','email=E-Mail,phone=Anruf,whatsapp=WhatsApp,telegram=Telegram','1','1','email','','','','','','','','0']);
+        $yform->setValidateField('empty', ['message','translate:inbox.message.validate.empty']);
+        $yform->setValueField('datestamp', ['datestamp','translate:inbox.datestamp','Y-m-d H:i:s','0','1']);
+        $yform->setValidateField('empty', ['privacy_policy','translate:inbox.privacy_policy.validate.empty']);
+        $yform->setValueField('datestamp_auto_delete', ['deletedate','translate:inbox.deletedate','Y-m-d H:i:s','0','1','+6 months']);
+        $yform->setValueField('submit_once', ['submit','translate.inbox.submit','translate:inbox.submit.wait']);
+        $yform->setValueField('ip', ['ip','translate:inbox.ip','1']);
+
+        return $yform;
     }
 
 }
