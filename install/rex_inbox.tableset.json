@@ -6,8 +6,8 @@
             "name": "translate:inbox.table",
             "description": "",
             "list_amount": 50,
-            "list_sortfield": "id",
-            "list_sortorder": "ASC",
+            "list_sortfield": "datestamp",
+            "list_sortorder": "DESC",
             "search": 1,
             "hidden": 1,
             "export": 1,
@@ -222,16 +222,28 @@
             },
             {
                 "table_name": "rex_inbox",
-                "prio": 13,
+                "prio": 14,
                 "type_id": "value",
-                "type_name": "submit_once",
-                "db_type": "none",
-                "list_hidden": 1,
+                "type_name": "ip",
+                "db_type": "varchar(191)",
+                "list_hidden": 0,
                 "search": 0,
-                "name": "submit",
-                "label": "translate.inbox.submit",
+                "name": "ip",
+                "label": "translate:inbox.ip",
                 "not_required": "",
-                "loading": "translate.inbox.submit.wait"
+                "no_db": "1"
+            },
+            {
+                "table_name": "rex_inbox",
+                "prio": 15,
+                "type_id": "value",
+                "type_name": "form_url",
+                "db_type": "text",
+                "list_hidden": 1,
+                "search": 1,
+                "name": "form_url",
+                "label": "translate:inbox.form_url",
+                "not_required": ""
             }
         ]
     }
