@@ -10,6 +10,14 @@ $email_field = $form->addTextField('email');
 $email_field->setLabel($addon->i18n('inbox.config.email'));
 $email_field->setNotice($addon->i18n('inbox.config.email_notice'));
 
+$subject_field = $form->addTextField('subject');
+$subject_field->setLabel($addon->i18n('inbox.config.subject'));
+$subject_field->setNotice($addon->i18n('inbox.config.subject_notice'));
+
+$subject_client_field = $form->addTextField('subject_client');
+$subject_client_field->setLabel($addon->i18n('inbox.config.subject_client'));
+$subject_client_field->setNotice($addon->i18n('inbox.config.subject_client_notice'));
+
 $fragment = new rex_fragment();
 $fragment->setVar('class', 'edit', false);
 $fragment->setVar('title', $addon->i18n('inbox.config.title'), false);

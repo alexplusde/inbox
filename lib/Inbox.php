@@ -210,4 +210,14 @@ class Inbox extends rex_yform_manager_dataset
 
         return $yform;
     }
+
+    public static function getSubject(string $name = "") :string
+    {
+        return \rex_config::get('inbox', 'subject', '') ." ". $name;
+    }
+
+    public static function getSubjectClient(string $name = "") :string
+    {
+        return \rex_config::get('inbox', 'subject_client', '') ." ". $name;
+    }
 }
