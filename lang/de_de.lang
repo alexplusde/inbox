@@ -1,21 +1,25 @@
-blaupause_title = Blaupause # Titel des Addons
+inbox_title = Posteingang
 
 # Menüpunkte
 
-blaupause_table = Blaupause
-blaupause_settings = Einstellungen
-blaupause_docs = Hilfe
-
-# Tipp: FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden.
-# Fertige Übersetzungen mit Copilot oder Profi-Übersetzungstools an.
-
-# Konfigurationsformulare
-
-blaupause_config = Einstellungen
-blaupause_config_mytextfield_label = Test-Feld
-blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
+inbox_table = Inbox
+inbox_settings = Einstellungen
+inbox_docs = Hilfe
 
 # YForm Tabellen-Übersetzung
 
-blaupause_table_name_label = Name
-blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+inbox.table = 📬 Posteingang
+inbox.name = Name
+inbox.email =  E-Mail
+inbox.phone =  Telefon
+inbox.message = Nachricht
+inbox.privacy_policy =  Datenschutzerklärung
+inbox.preffered_channel =  Bevorzugte Kontaktmöglichkeit
+inbox.datestamp = Gesendet am...
+inbox.deletedate = Wird gelöscht am...
+inbox.ip = IP-Adresse
+
+inbox.name.validate.empty = Bitte geben Sie Ihren Namen an.
+inbox.email.validate.empty = Bitte geben Sie Ihre E-Mail-Adresse an.
+inbox.message.validate.empty = Bitte geben Sie eine Nachricht ein.
+inbox.privacy_policy.validate.empty = Bitte akzeptieren Sie die Datenschutzerklärung.
