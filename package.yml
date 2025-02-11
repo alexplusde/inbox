@@ -13,14 +13,13 @@ requires:
 
 page:
     title: translate:inbox_title
-    prio: 100
+    prio: 12
+    block: system
     icon: rex-icon fa-envelope
 
 pages:
     inbox:
         title: translate:inbox_title
-        block: system
-        prio: 17
         icon: rex-icon fa-envelope
         perm: inbox[]
     settings:
@@ -33,7 +32,7 @@ pages:
         subPath: README.md
         icon: rex-icon fa-info-circle
         itemClass: pull-right
-        perm: inbox[docs]
+        perm: admin
 
 installer_ignore:
 - .git
