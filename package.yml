@@ -10,6 +10,7 @@ requires:
     packages:
         yform: "^4"
         yform_spam_protection: "^1"
+        auto_delete: "^1"
 
 page:
     title: translate:inbox_title
