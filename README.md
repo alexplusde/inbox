@@ -1,4 +1,4 @@
-# Inbox - Dieses Repository kopieren, anpassen, AddOn-Entwicklung für REDAXO starten
+# Inbox - Kontaktformular und Posteingang für Mitteilungen über die REDAXO-Website 
 
 Für REDAXO-Neulinge, die schnell ein Kontaktformular benötigen.
 
