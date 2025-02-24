@@ -1,0 +1,7 @@
+name: inbox
+mail_from: ''
+mail_from_name: ''
+mail_reply_to: ''
+mail_reply_to_name: ''
+subject: '<?= Alexplusde\Inbox\Inbox::getSubject("REX_YFORM_DATA[field="name"]) ?>'
+attachments: ''
